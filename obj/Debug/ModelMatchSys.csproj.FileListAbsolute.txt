@@ -1,0 +1,12 @@
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\bin\Debug\ModelMatchSys.exe
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\bin\Debug\ModelMatchSys.pdb
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\bin\Debug\CSkin.dll
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\bin\Debug\CSkin.xml
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\obj\Debug\ModelMatchSys.csprojResolveAssemblyReference.cache
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\obj\Debug\ModelMatchSys.Main.resources
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\obj\Debug\ModelMatchSys.Properties.Resources.resources
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\obj\Debug\ModelMatchSys.csproj.GenerateResource.Cache
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\obj\Debug\ModelMatchSys.exe
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\obj\Debug\ModelMatchSys.pdb
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\obj\Debug\ModelMatchSys.AddTeam.resources
+C:\Users\75800\Documents\土建\ModelMatchSys\ModelMatchSys\obj\Debug\ModelMatchSys.ScoreDetails.resources

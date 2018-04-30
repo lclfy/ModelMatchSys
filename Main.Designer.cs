@@ -29,18 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.timeCount_lbl = new CCWin.SkinControl.SkinLabel();
+            this.timer_lbl = new CCWin.SkinControl.SkinLabel();
             this.timeCount_timer = new System.Windows.Forms.Timer(this.components);
             this.skinLabel2 = new CCWin.SkinControl.SkinLabel();
             this.skinLabel3 = new CCWin.SkinControl.SkinLabel();
             this.start_btn = new CCWin.SkinControl.SkinButton();
             this.skinGroupBox1 = new CCWin.SkinControl.SkinGroupBox();
-            this.clearTimer_btn = new CCWin.SkinControl.SkinButton();
+            this.second_tb = new CCWin.SkinControl.SkinWaterTextBox();
+            this.minute_tb = new CCWin.SkinControl.SkinWaterTextBox();
             this.pauseTimer_btn = new CCWin.SkinControl.SkinButton();
             this.score_lv = new System.Windows.Forms.ListView();
+            this.rank = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.teamName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.score = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.skinLabel1 = new CCWin.SkinControl.SkinLabel();
             this.skinLabel4 = new CCWin.SkinControl.SkinLabel();
             this.skinGroupBox2 = new CCWin.SkinControl.SkinGroupBox();
+            this.D3Score_tb = new CCWin.SkinControl.SkinWaterTextBox();
+            this.D2Score_tb = new CCWin.SkinControl.SkinWaterTextBox();
+            this.D1Score_tb = new CCWin.SkinControl.SkinWaterTextBox();
+            this.thirdLoad_tb = new CCWin.SkinControl.SkinWaterTextBox();
+            this.secondLoad_tb = new CCWin.SkinControl.SkinWaterTextBox();
+            this.firstLoad_score = new CCWin.SkinControl.SkinWaterTextBox();
+            this.skinLabel11 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel13 = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel14 = new CCWin.SkinControl.SkinLabel();
+            this.totalLoadScore_lbl = new CCWin.SkinControl.SkinLabel();
+            this.skinLabel12 = new CCWin.SkinControl.SkinLabel();
             this.saveScore_btn = new CCWin.SkinControl.SkinButton();
             this.skinLabel7 = new CCWin.SkinControl.SkinLabel();
             this.skinLabel5 = new CCWin.SkinControl.SkinLabel();
@@ -51,46 +66,30 @@
             this.modify_btn = new CCWin.SkinControl.SkinButton();
             this.skinLabel9 = new CCWin.SkinControl.SkinLabel();
             this.skinLabel10 = new CCWin.SkinControl.SkinLabel();
-            this.totalLoadScore_lbl = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel12 = new CCWin.SkinControl.SkinLabel();
-            this.teamName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.rank = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.score = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.AddTeamName_btn = new CCWin.SkinControl.SkinButton();
-            this.skinLabel11 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel13 = new CCWin.SkinControl.SkinLabel();
-            this.skinLabel14 = new CCWin.SkinControl.SkinLabel();
             this.skinGroupBox3 = new CCWin.SkinControl.SkinGroupBox();
-            this.minute_tb = new CCWin.SkinControl.SkinWaterTextBox();
-            this.second_tb = new CCWin.SkinControl.SkinWaterTextBox();
-            this.firstLoad_score = new CCWin.SkinControl.SkinWaterTextBox();
-            this.secondLoad_tb = new CCWin.SkinControl.SkinWaterTextBox();
-            this.thirdLoad_tb = new CCWin.SkinControl.SkinWaterTextBox();
-            this.D1Score_tb = new CCWin.SkinControl.SkinWaterTextBox();
-            this.D2Score_tb = new CCWin.SkinControl.SkinWaterTextBox();
-            this.D3Score_tb = new CCWin.SkinControl.SkinWaterTextBox();
-            this.firstLoadWeight_tb = new CCWin.SkinControl.SkinWaterTextBox();
-            this.secondLoadWeight_tb = new CCWin.SkinControl.SkinWaterTextBox();
-            this.thirdLoadWeight_tb = new CCWin.SkinControl.SkinWaterTextBox();
             this.ownWeight_tb = new CCWin.SkinControl.SkinWaterTextBox();
+            this.thirdLoadWeight_tb = new CCWin.SkinControl.SkinWaterTextBox();
+            this.secondLoadWeight_tb = new CCWin.SkinControl.SkinWaterTextBox();
+            this.firstLoadWeight_tb = new CCWin.SkinControl.SkinWaterTextBox();
             this.skinGroupBox1.SuspendLayout();
             this.skinGroupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.skinGroupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // timeCount_lbl
+            // timer_lbl
             // 
-            this.timeCount_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.timeCount_lbl.BorderColor = System.Drawing.Color.White;
-            this.timeCount_lbl.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.timeCount_lbl.ForeColor = System.Drawing.Color.Crimson;
-            this.timeCount_lbl.Location = new System.Drawing.Point(46, 41);
-            this.timeCount_lbl.Name = "timeCount_lbl";
-            this.timeCount_lbl.Size = new System.Drawing.Size(136, 40);
-            this.timeCount_lbl.TabIndex = 1;
-            this.timeCount_lbl.Text = "00:30";
-            this.timeCount_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.timer_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.timer_lbl.BorderColor = System.Drawing.Color.White;
+            this.timer_lbl.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.timer_lbl.ForeColor = System.Drawing.Color.Crimson;
+            this.timer_lbl.Location = new System.Drawing.Point(46, 41);
+            this.timer_lbl.Name = "timer_lbl";
+            this.timer_lbl.Size = new System.Drawing.Size(136, 40);
+            this.timer_lbl.TabIndex = 1;
+            this.timer_lbl.Text = "00:00";
+            this.timer_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timeCount_timer
             // 
@@ -103,7 +102,7 @@
             this.skinLabel2.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel2.BorderColor = System.Drawing.Color.White;
             this.skinLabel2.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel2.Location = new System.Drawing.Point(57, 117);
+            this.skinLabel2.Location = new System.Drawing.Point(107, 119);
             this.skinLabel2.Name = "skinLabel2";
             this.skinLabel2.Size = new System.Drawing.Size(20, 17);
             this.skinLabel2.TabIndex = 3;
@@ -115,7 +114,7 @@
             this.skinLabel3.BackColor = System.Drawing.Color.Transparent;
             this.skinLabel3.BorderColor = System.Drawing.Color.White;
             this.skinLabel3.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel3.Location = new System.Drawing.Point(118, 117);
+            this.skinLabel3.Location = new System.Drawing.Point(168, 119);
             this.skinLabel3.Name = "skinLabel3";
             this.skinLabel3.Size = new System.Drawing.Size(20, 17);
             this.skinLabel3.TabIndex = 4;
@@ -130,7 +129,7 @@
             this.start_btn.DownBack = null;
             this.start_btn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.start_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.start_btn.Location = new System.Drawing.Point(144, 111);
+            this.start_btn.Location = new System.Drawing.Point(37, 143);
             this.start_btn.MouseBack = null;
             this.start_btn.Name = "start_btn";
             this.start_btn.NormlBack = null;
@@ -146,10 +145,9 @@
             this.skinGroupBox1.BorderColor = System.Drawing.Color.DimGray;
             this.skinGroupBox1.Controls.Add(this.second_tb);
             this.skinGroupBox1.Controls.Add(this.minute_tb);
-            this.skinGroupBox1.Controls.Add(this.clearTimer_btn);
             this.skinGroupBox1.Controls.Add(this.pauseTimer_btn);
             this.skinGroupBox1.Controls.Add(this.start_btn);
-            this.skinGroupBox1.Controls.Add(this.timeCount_lbl);
+            this.skinGroupBox1.Controls.Add(this.timer_lbl);
             this.skinGroupBox1.Controls.Add(this.skinLabel3);
             this.skinGroupBox1.Controls.Add(this.skinLabel2);
             this.skinGroupBox1.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -166,23 +164,31 @@
             this.skinGroupBox1.TitleRectBackColor = System.Drawing.Color.White;
             this.skinGroupBox1.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
             // 
-            // clearTimer_btn
+            // second_tb
             // 
-            this.clearTimer_btn.BackColor = System.Drawing.Color.Transparent;
-            this.clearTimer_btn.BaseColor = System.Drawing.Color.DodgerBlue;
-            this.clearTimer_btn.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.clearTimer_btn.ControlState = CCWin.SkinClass.ControlState.Normal;
-            this.clearTimer_btn.DownBack = null;
-            this.clearTimer_btn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.clearTimer_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.clearTimer_btn.Location = new System.Drawing.Point(124, 145);
-            this.clearTimer_btn.MouseBack = null;
-            this.clearTimer_btn.Name = "clearTimer_btn";
-            this.clearTimer_btn.NormlBack = null;
-            this.clearTimer_btn.Size = new System.Drawing.Size(75, 28);
-            this.clearTimer_btn.TabIndex = 8;
-            this.clearTimer_btn.Text = "清零";
-            this.clearTimer_btn.UseVisualStyleBackColor = false;
+            this.second_tb.Location = new System.Drawing.Point(127, 113);
+            this.second_tb.Name = "second_tb";
+            this.second_tb.Size = new System.Drawing.Size(35, 26);
+            this.second_tb.TabIndex = 9;
+            this.second_tb.Text = "0";
+            this.second_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.second_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.second_tb.WaterText = "";
+            this.second_tb.TextChanged += new System.EventHandler(this.second_tb_TextChanged);
+            this.second_tb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.second_tb_KeyPress);
+            // 
+            // minute_tb
+            // 
+            this.minute_tb.Location = new System.Drawing.Point(66, 113);
+            this.minute_tb.Name = "minute_tb";
+            this.minute_tb.Size = new System.Drawing.Size(35, 26);
+            this.minute_tb.TabIndex = 1;
+            this.minute_tb.Text = "0";
+            this.minute_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.minute_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.minute_tb.WaterText = "";
+            this.minute_tb.TextChanged += new System.EventHandler(this.minute_tb_TextChanged);
+            this.minute_tb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.minute_tb_KeyPress);
             // 
             // pauseTimer_btn
             // 
@@ -193,7 +199,7 @@
             this.pauseTimer_btn.DownBack = null;
             this.pauseTimer_btn.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.pauseTimer_btn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.pauseTimer_btn.Location = new System.Drawing.Point(45, 145);
+            this.pauseTimer_btn.Location = new System.Drawing.Point(121, 143);
             this.pauseTimer_btn.MouseBack = null;
             this.pauseTimer_btn.Name = "pauseTimer_btn";
             this.pauseTimer_btn.NormlBack = null;
@@ -201,6 +207,7 @@
             this.pauseTimer_btn.TabIndex = 7;
             this.pauseTimer_btn.Text = "暂停";
             this.pauseTimer_btn.UseVisualStyleBackColor = false;
+            this.pauseTimer_btn.Click += new System.EventHandler(this.pauseTimer_btn_Click);
             // 
             // score_lv
             // 
@@ -209,12 +216,32 @@
             this.teamName,
             this.score});
             this.score_lv.Font = new System.Drawing.Font("微软雅黑", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.score_lv.FullRowSelect = true;
+            this.score_lv.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.score_lv.Location = new System.Drawing.Point(621, 60);
+            this.score_lv.MultiSelect = false;
             this.score_lv.Name = "score_lv";
+            this.score_lv.ShowGroups = false;
             this.score_lv.Size = new System.Drawing.Size(357, 540);
             this.score_lv.TabIndex = 7;
             this.score_lv.UseCompatibleStateImageBehavior = false;
             this.score_lv.View = System.Windows.Forms.View.Details;
+            this.score_lv.SelectedIndexChanged += new System.EventHandler(this.score_lv_SelectedIndexChanged);
+            // 
+            // rank
+            // 
+            this.rank.Text = "排名";
+            this.rank.Width = 50;
+            // 
+            // teamName
+            // 
+            this.teamName.Text = "组名";
+            this.teamName.Width = 150;
+            // 
+            // score
+            // 
+            this.score.Text = "总分";
+            this.score.Width = 150;
             // 
             // skinLabel1
             // 
@@ -273,6 +300,126 @@
             this.skinGroupBox2.TitleBorderColor = System.Drawing.Color.DimGray;
             this.skinGroupBox2.TitleRectBackColor = System.Drawing.Color.White;
             this.skinGroupBox2.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
+            // 
+            // D3Score_tb
+            // 
+            this.D3Score_tb.Location = new System.Drawing.Point(397, 270);
+            this.D3Score_tb.Name = "D3Score_tb";
+            this.D3Score_tb.Size = new System.Drawing.Size(100, 26);
+            this.D3Score_tb.TabIndex = 33;
+            this.D3Score_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.D3Score_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.D3Score_tb.WaterText = "";
+            // 
+            // D2Score_tb
+            // 
+            this.D2Score_tb.Location = new System.Drawing.Point(397, 229);
+            this.D2Score_tb.Name = "D2Score_tb";
+            this.D2Score_tb.Size = new System.Drawing.Size(100, 26);
+            this.D2Score_tb.TabIndex = 32;
+            this.D2Score_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.D2Score_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.D2Score_tb.WaterText = "";
+            // 
+            // D1Score_tb
+            // 
+            this.D1Score_tb.Location = new System.Drawing.Point(397, 188);
+            this.D1Score_tb.Name = "D1Score_tb";
+            this.D1Score_tb.Size = new System.Drawing.Size(100, 26);
+            this.D1Score_tb.TabIndex = 31;
+            this.D1Score_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.D1Score_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.D1Score_tb.WaterText = "";
+            // 
+            // thirdLoad_tb
+            // 
+            this.thirdLoad_tb.Location = new System.Drawing.Point(149, 270);
+            this.thirdLoad_tb.Name = "thirdLoad_tb";
+            this.thirdLoad_tb.Size = new System.Drawing.Size(100, 26);
+            this.thirdLoad_tb.TabIndex = 30;
+            this.thirdLoad_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.thirdLoad_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.thirdLoad_tb.WaterText = "";
+            // 
+            // secondLoad_tb
+            // 
+            this.secondLoad_tb.Location = new System.Drawing.Point(149, 229);
+            this.secondLoad_tb.Name = "secondLoad_tb";
+            this.secondLoad_tb.Size = new System.Drawing.Size(100, 26);
+            this.secondLoad_tb.TabIndex = 29;
+            this.secondLoad_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.secondLoad_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.secondLoad_tb.WaterText = "";
+            // 
+            // firstLoad_score
+            // 
+            this.firstLoad_score.Location = new System.Drawing.Point(149, 188);
+            this.firstLoad_score.Name = "firstLoad_score";
+            this.firstLoad_score.Size = new System.Drawing.Size(100, 26);
+            this.firstLoad_score.TabIndex = 21;
+            this.firstLoad_score.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.firstLoad_score.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.firstLoad_score.WaterText = "";
+            // 
+            // skinLabel11
+            // 
+            this.skinLabel11.AutoSize = true;
+            this.skinLabel11.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel11.BorderColor = System.Drawing.Color.White;
+            this.skinLabel11.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel11.Location = new System.Drawing.Point(50, 273);
+            this.skinLabel11.Name = "skinLabel11";
+            this.skinLabel11.Size = new System.Drawing.Size(93, 20);
+            this.skinLabel11.TabIndex = 28;
+            this.skinLabel11.Text = "三级加载分值";
+            // 
+            // skinLabel13
+            // 
+            this.skinLabel13.AutoSize = true;
+            this.skinLabel13.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel13.BorderColor = System.Drawing.Color.White;
+            this.skinLabel13.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel13.Location = new System.Drawing.Point(49, 232);
+            this.skinLabel13.Name = "skinLabel13";
+            this.skinLabel13.Size = new System.Drawing.Size(93, 20);
+            this.skinLabel13.TabIndex = 26;
+            this.skinLabel13.Text = "二级加载分值";
+            // 
+            // skinLabel14
+            // 
+            this.skinLabel14.AutoSize = true;
+            this.skinLabel14.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel14.BorderColor = System.Drawing.Color.White;
+            this.skinLabel14.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel14.Location = new System.Drawing.Point(50, 191);
+            this.skinLabel14.Name = "skinLabel14";
+            this.skinLabel14.Size = new System.Drawing.Size(93, 20);
+            this.skinLabel14.TabIndex = 24;
+            this.skinLabel14.Text = "一级加载分值";
+            // 
+            // totalLoadScore_lbl
+            // 
+            this.totalLoadScore_lbl.BackColor = System.Drawing.Color.Transparent;
+            this.totalLoadScore_lbl.BorderColor = System.Drawing.Color.White;
+            this.totalLoadScore_lbl.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.totalLoadScore_lbl.Location = new System.Drawing.Point(143, 308);
+            this.totalLoadScore_lbl.Name = "totalLoadScore_lbl";
+            this.totalLoadScore_lbl.Size = new System.Drawing.Size(95, 20);
+            this.totalLoadScore_lbl.TabIndex = 23;
+            this.totalLoadScore_lbl.Text = "score";
+            this.totalLoadScore_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // skinLabel12
+            // 
+            this.skinLabel12.AutoSize = true;
+            this.skinLabel12.BackColor = System.Drawing.Color.Transparent;
+            this.skinLabel12.BorderColor = System.Drawing.Color.White;
+            this.skinLabel12.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.skinLabel12.Location = new System.Drawing.Point(56, 308);
+            this.skinLabel12.Name = "skinLabel12";
+            this.skinLabel12.Size = new System.Drawing.Size(79, 20);
+            this.skinLabel12.TabIndex = 22;
+            this.skinLabel12.Text = "加载总分值";
             // 
             // saveScore_btn
             // 
@@ -367,6 +514,7 @@
             this.delete_btn.TabIndex = 13;
             this.delete_btn.Text = "删除";
             this.delete_btn.UseVisualStyleBackColor = false;
+            this.delete_btn.Click += new System.EventHandler(this.delete_btn_Click);
             // 
             // modify_btn
             // 
@@ -383,8 +531,9 @@
             this.modify_btn.NormlBack = null;
             this.modify_btn.Size = new System.Drawing.Size(103, 33);
             this.modify_btn.TabIndex = 14;
-            this.modify_btn.Text = "修改";
+            this.modify_btn.Text = "检视分数";
             this.modify_btn.UseVisualStyleBackColor = false;
+            this.modify_btn.Click += new System.EventHandler(this.modify_btn_Click);
             // 
             // skinLabel9
             // 
@@ -410,45 +559,6 @@
             this.skinLabel10.TabIndex = 17;
             this.skinLabel10.Text = "三级加载重量";
             // 
-            // totalLoadScore_lbl
-            // 
-            this.totalLoadScore_lbl.BackColor = System.Drawing.Color.Transparent;
-            this.totalLoadScore_lbl.BorderColor = System.Drawing.Color.White;
-            this.totalLoadScore_lbl.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.totalLoadScore_lbl.Location = new System.Drawing.Point(143, 308);
-            this.totalLoadScore_lbl.Name = "totalLoadScore_lbl";
-            this.totalLoadScore_lbl.Size = new System.Drawing.Size(95, 20);
-            this.totalLoadScore_lbl.TabIndex = 23;
-            this.totalLoadScore_lbl.Text = "score";
-            this.totalLoadScore_lbl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // skinLabel12
-            // 
-            this.skinLabel12.AutoSize = true;
-            this.skinLabel12.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel12.BorderColor = System.Drawing.Color.White;
-            this.skinLabel12.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel12.Location = new System.Drawing.Point(56, 308);
-            this.skinLabel12.Name = "skinLabel12";
-            this.skinLabel12.Size = new System.Drawing.Size(79, 20);
-            this.skinLabel12.TabIndex = 22;
-            this.skinLabel12.Text = "加载总分值";
-            // 
-            // teamName
-            // 
-            this.teamName.Text = "组名";
-            this.teamName.Width = 150;
-            // 
-            // rank
-            // 
-            this.rank.Text = "排名";
-            this.rank.Width = 50;
-            // 
-            // score
-            // 
-            this.score.Text = "总分";
-            this.score.Width = 150;
-            // 
             // AddTeamName_btn
             // 
             this.AddTeamName_btn.BackColor = System.Drawing.Color.Transparent;
@@ -466,42 +576,7 @@
             this.AddTeamName_btn.TabIndex = 18;
             this.AddTeamName_btn.Text = "增加组名";
             this.AddTeamName_btn.UseVisualStyleBackColor = false;
-            // 
-            // skinLabel11
-            // 
-            this.skinLabel11.AutoSize = true;
-            this.skinLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel11.BorderColor = System.Drawing.Color.White;
-            this.skinLabel11.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel11.Location = new System.Drawing.Point(50, 273);
-            this.skinLabel11.Name = "skinLabel11";
-            this.skinLabel11.Size = new System.Drawing.Size(93, 20);
-            this.skinLabel11.TabIndex = 28;
-            this.skinLabel11.Text = "三级加载分值";
-            // 
-            // skinLabel13
-            // 
-            this.skinLabel13.AutoSize = true;
-            this.skinLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel13.BorderColor = System.Drawing.Color.White;
-            this.skinLabel13.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel13.Location = new System.Drawing.Point(49, 232);
-            this.skinLabel13.Name = "skinLabel13";
-            this.skinLabel13.Size = new System.Drawing.Size(93, 20);
-            this.skinLabel13.TabIndex = 26;
-            this.skinLabel13.Text = "二级加载分值";
-            // 
-            // skinLabel14
-            // 
-            this.skinLabel14.AutoSize = true;
-            this.skinLabel14.BackColor = System.Drawing.Color.Transparent;
-            this.skinLabel14.BorderColor = System.Drawing.Color.White;
-            this.skinLabel14.Font = new System.Drawing.Font("微软雅黑", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.skinLabel14.Location = new System.Drawing.Point(50, 191);
-            this.skinLabel14.Name = "skinLabel14";
-            this.skinLabel14.Size = new System.Drawing.Size(93, 20);
-            this.skinLabel14.TabIndex = 24;
-            this.skinLabel14.Text = "一级加载分值";
+            this.AddTeamName_btn.Click += new System.EventHandler(this.AddTeamName_btn_Click);
             // 
             // skinGroupBox3
             // 
@@ -529,110 +604,15 @@
             this.skinGroupBox3.TitleRectBackColor = System.Drawing.Color.White;
             this.skinGroupBox3.TitleRoundStyle = CCWin.SkinClass.RoundStyle.All;
             // 
-            // minute_tb
+            // ownWeight_tb
             // 
-            this.minute_tb.Location = new System.Drawing.Point(16, 111);
-            this.minute_tb.Name = "minute_tb";
-            this.minute_tb.Size = new System.Drawing.Size(35, 26);
-            this.minute_tb.TabIndex = 1;
-            this.minute_tb.Text = "0";
-            this.minute_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.minute_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.minute_tb.WaterText = "";
-            this.minute_tb.TextChanged += new System.EventHandler(this.minute_tb_TextChanged);
-            this.minute_tb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.minute_tb_KeyPress);
-            // 
-            // second_tb
-            // 
-            this.second_tb.Location = new System.Drawing.Point(77, 111);
-            this.second_tb.Name = "second_tb";
-            this.second_tb.Size = new System.Drawing.Size(35, 26);
-            this.second_tb.TabIndex = 9;
-            this.second_tb.Text = "0";
-            this.second_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.second_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.second_tb.WaterText = "";
-            this.second_tb.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.second_tb_KeyPress);
-            // 
-            // firstLoad_score
-            // 
-            this.firstLoad_score.Location = new System.Drawing.Point(149, 188);
-            this.firstLoad_score.Name = "firstLoad_score";
-            this.firstLoad_score.Size = new System.Drawing.Size(100, 26);
-            this.firstLoad_score.TabIndex = 21;
-            this.firstLoad_score.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.firstLoad_score.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.firstLoad_score.WaterText = "";
-            // 
-            // secondLoad_tb
-            // 
-            this.secondLoad_tb.Location = new System.Drawing.Point(149, 229);
-            this.secondLoad_tb.Name = "secondLoad_tb";
-            this.secondLoad_tb.Size = new System.Drawing.Size(100, 26);
-            this.secondLoad_tb.TabIndex = 29;
-            this.secondLoad_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.secondLoad_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.secondLoad_tb.WaterText = "";
-            // 
-            // thirdLoad_tb
-            // 
-            this.thirdLoad_tb.Location = new System.Drawing.Point(149, 270);
-            this.thirdLoad_tb.Name = "thirdLoad_tb";
-            this.thirdLoad_tb.Size = new System.Drawing.Size(100, 26);
-            this.thirdLoad_tb.TabIndex = 30;
-            this.thirdLoad_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.thirdLoad_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.thirdLoad_tb.WaterText = "";
-            // 
-            // D1Score_tb
-            // 
-            this.D1Score_tb.Location = new System.Drawing.Point(397, 188);
-            this.D1Score_tb.Name = "D1Score_tb";
-            this.D1Score_tb.Size = new System.Drawing.Size(100, 26);
-            this.D1Score_tb.TabIndex = 31;
-            this.D1Score_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.D1Score_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.D1Score_tb.WaterText = "";
-            // 
-            // D2Score_tb
-            // 
-            this.D2Score_tb.Location = new System.Drawing.Point(397, 229);
-            this.D2Score_tb.Name = "D2Score_tb";
-            this.D2Score_tb.Size = new System.Drawing.Size(100, 26);
-            this.D2Score_tb.TabIndex = 32;
-            this.D2Score_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.D2Score_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.D2Score_tb.WaterText = "";
-            // 
-            // D3Score_tb
-            // 
-            this.D3Score_tb.Location = new System.Drawing.Point(397, 270);
-            this.D3Score_tb.Name = "D3Score_tb";
-            this.D3Score_tb.Size = new System.Drawing.Size(100, 26);
-            this.D3Score_tb.TabIndex = 33;
-            this.D3Score_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.D3Score_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.D3Score_tb.WaterText = "";
-            // 
-            // firstLoadWeight_tb
-            // 
-            this.firstLoadWeight_tb.Location = new System.Drawing.Point(125, 38);
-            this.firstLoadWeight_tb.Name = "firstLoadWeight_tb";
-            this.firstLoadWeight_tb.Size = new System.Drawing.Size(100, 26);
-            this.firstLoadWeight_tb.TabIndex = 34;
-            this.firstLoadWeight_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.firstLoadWeight_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.firstLoadWeight_tb.WaterText = "";
-            // 
-            // secondLoadWeight_tb
-            // 
-            this.secondLoadWeight_tb.Location = new System.Drawing.Point(125, 69);
-            this.secondLoadWeight_tb.Name = "secondLoadWeight_tb";
-            this.secondLoadWeight_tb.Size = new System.Drawing.Size(100, 26);
-            this.secondLoadWeight_tb.TabIndex = 35;
-            this.secondLoadWeight_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.secondLoadWeight_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.secondLoadWeight_tb.WaterText = "";
+            this.ownWeight_tb.Location = new System.Drawing.Point(125, 137);
+            this.ownWeight_tb.Name = "ownWeight_tb";
+            this.ownWeight_tb.Size = new System.Drawing.Size(100, 26);
+            this.ownWeight_tb.TabIndex = 37;
+            this.ownWeight_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ownWeight_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.ownWeight_tb.WaterText = "";
             // 
             // thirdLoadWeight_tb
             // 
@@ -644,15 +624,25 @@
             this.thirdLoadWeight_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
             this.thirdLoadWeight_tb.WaterText = "";
             // 
-            // ownWeight_tb
+            // secondLoadWeight_tb
             // 
-            this.ownWeight_tb.Location = new System.Drawing.Point(125, 137);
-            this.ownWeight_tb.Name = "ownWeight_tb";
-            this.ownWeight_tb.Size = new System.Drawing.Size(100, 26);
-            this.ownWeight_tb.TabIndex = 37;
-            this.ownWeight_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.ownWeight_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
-            this.ownWeight_tb.WaterText = "";
+            this.secondLoadWeight_tb.Location = new System.Drawing.Point(125, 69);
+            this.secondLoadWeight_tb.Name = "secondLoadWeight_tb";
+            this.secondLoadWeight_tb.Size = new System.Drawing.Size(100, 26);
+            this.secondLoadWeight_tb.TabIndex = 35;
+            this.secondLoadWeight_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.secondLoadWeight_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.secondLoadWeight_tb.WaterText = "";
+            // 
+            // firstLoadWeight_tb
+            // 
+            this.firstLoadWeight_tb.Location = new System.Drawing.Point(125, 38);
+            this.firstLoadWeight_tb.Name = "firstLoadWeight_tb";
+            this.firstLoadWeight_tb.Size = new System.Drawing.Size(100, 26);
+            this.firstLoadWeight_tb.TabIndex = 34;
+            this.firstLoadWeight_tb.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.firstLoadWeight_tb.WaterColor = System.Drawing.Color.FromArgb(((int)(((byte)(127)))), ((int)(((byte)(127)))), ((int)(((byte)(127)))));
+            this.firstLoadWeight_tb.WaterText = "";
             // 
             // Main
             // 
@@ -684,13 +674,12 @@
 
         #endregion
 
-        private CCWin.SkinControl.SkinLabel timeCount_lbl;
+        private CCWin.SkinControl.SkinLabel timer_lbl;
         private System.Windows.Forms.Timer timeCount_timer;
         private CCWin.SkinControl.SkinLabel skinLabel2;
         private CCWin.SkinControl.SkinLabel skinLabel3;
         private CCWin.SkinControl.SkinButton start_btn;
         private CCWin.SkinControl.SkinGroupBox skinGroupBox1;
-        private CCWin.SkinControl.SkinButton clearTimer_btn;
         private CCWin.SkinControl.SkinButton pauseTimer_btn;
         private System.Windows.Forms.ListView score_lv;
         private CCWin.SkinControl.SkinLabel skinLabel1;
